@@ -53,11 +53,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
         holder.ItemName.setText(mData.get(position).getName());
         holder.ItemPlan.setText(mData.get(position).getPaymentPlan());
-        holder.ItemReleaseDate.setText(mData.get(position).getReleaseYear());
+        holder.ItemReleaseDate.setText(utils.getSimplifiedDate(mData.get(position).getReleaseYear()));
         holder.ItemDuration.setText(mData.get(position).getVideoDuration());
         holder.ItemType.setText(mData.get(position).getType());
-        holder.ItemCreatedOn.setText(mData.get(position).getCreatedOn());
-        holder.ItemUpdatedOn.setText(mData.get(position).getUpdatedOn());
+        holder.ItemCreatedOn.setText(utils.getSimplifiedDate(mData.get(position).getCreatedOn()));
+        holder.ItemUpdatedOn.setText(utils.getSimplifiedDate(mData.get(position).getUpdatedOn()));
         holder.ItemShortDescription.setText(mData.get(position).getShortDescription());
         holder.ItemDescription.setText(mData.get(position).getDescription());
     }

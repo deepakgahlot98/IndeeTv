@@ -13,6 +13,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Utils {
@@ -62,6 +63,10 @@ public class Utils {
             return null;
         }
         return json;
+    }
+
+    public String getSimplifiedDate(String s) {
+        return s.split("T")[0];
     }
 
 }
