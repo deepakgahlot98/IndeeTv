@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="Name"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Plan"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/item_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+    <TextView
+        android:id="@+id/item_releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release Year"
+        android:textSize="20sp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/item_plan"
+        app:layout_constraintTop_toBottomOf="@+id/item_name"/>
+
+    <TextView
+        android:id="@+id/item_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Duration"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/item_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/item_plan" />
+
+    <TextView
+        android:id="@+id/item_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="20sp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/item_duration"
+        app:layout_constraintTop_toBottomOf="@+id/item_plan"/>
+
+    <TextView
+        android:id="@+id/item_createdOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Created On: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/item_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/item_duration" />
+
+    <TextView
+        android:id="@+id/item_UpdatedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Updated On: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/item_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/item_createdOn" />
+
+    <TextView
+        android:id="@+id/item_shortDescription"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Short Description"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/item_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/item_UpdatedOn" />
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="50dp"
+        android:text="Description"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_shortDescription"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
